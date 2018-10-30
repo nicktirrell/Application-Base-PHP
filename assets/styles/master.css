@@ -124,7 +124,8 @@ body {
     border-radius: 5px;
     padding: 40px 30px;
     text-align: left;
-    position: relative; }
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     body .form .success p {
       font-size: 22px;
       font-weight: 500; }
