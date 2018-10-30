@@ -1,0 +1,221 @@
+.fadeIn {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 1.5s cubic-bezier(0.09, 0.5, 0.35, 0.98); }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.shake {
+  -webkit-animation: shake 0.85s;
+  -moz-animation: shake 0.85s;
+  -ms-animation: shake 0.85s;
+  -o-animation: shake 0.85s;
+  animation: shake 0.85s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 0.25px; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0; }
+
+button img {
+  height: 100%; }
+
+input:focus, textarea:focus, p:focus, button:focus, div:focus {
+  outline: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset; }
+
+body {
+  background: #667db6;
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh; }
+  body .form {
+    background: #fff;
+    margin: auto;
+    width: 300px;
+    border-radius: 5px;
+    padding: 40px 30px;
+    text-align: left;
+    position: relative; }
+    body .form .success p {
+      font-size: 22px;
+      font-weight: 500; }
+    body .form .success .buttons {
+      display: flex;
+      margin-top: 20px; }
+      body .form .success .buttons .wide {
+        background: #0082c8;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        text-align: center; }
+    body .form .logo {
+      position: absolute;
+      width: 100%;
+      top: -100px;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      body .form .logo img {
+        height: 50px;
+        width: auto; }
+    body .form .error {
+      margin-bottom: 15px;
+      color: #ed2727;
+      font-weight: 500;
+      display: flex; }
+      body .form .error .emoji {
+        display: block;
+        margin-top: 2px;
+        margin-left: 2px; }
+    body .form .title {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.5px; }
+    body .form .description {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 15px 0; }
+    body .form form {
+      display: flex;
+      flex-direction: column; }
+      body .form form input {
+        background: #F7F7F7;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 15px 10px;
+        font-size: 16px;
+        color: #000; }
+      body .form form .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px; }
+        body .form form .buttons .wide {
+          font-family: "Roboto", sans-serif;
+          width: calc(65% - 15px);
+          padding: 10px 0;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center; }
+        body .form form .buttons .slim {
+          font-family: "Roboto", sans-serif;
+          width: 35%;
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 5px;
+          cursor: pointer; }
+        body .form form .buttons .solid {
+          background: #0082c8;
+          color: #fff;
+          font-weight: 500;
+          font-size: 15px;
+          letter-spacing: 0.5px; }
+        body .form form .buttons .border {
+          border: 2px solid #667db6;
+          color: #667db6;
+          font-size: 15px; }
+    body .form .disclaim {
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      color: #fff;
+      font-size: 14px;
+      padding: 0 50px;
+      font-weight: 300; }
